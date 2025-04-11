@@ -1,0 +1,209 @@
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  background-color: var(--black);
+  gap: 2rem;
+}
+
+.form {
+  padding: 3rem;
+  border: 10px solid var(--green);
+  border-radius: 30px;
+  /*border-bottom: 1px solid var(--green);*/
+  /*border-top: 1px solid var(--green);*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 600px;
+}
+
+.form-heading, .map-heading {
+  text-align: center;
+  font-size: 40px;
+  color: var(--green);
+  font-style: italic;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+input, select {
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+}
+
+#area {
+  font-size: 20px;
+  padding: 5px;
+  height: 150px;
+  width: 70%;
+}
+
+.name {
+  font-size: 25px;
+  color: var(--white);
+}
+
+.line {
+  height: 1px;
+  border: none;
+  background-color: var(--green);
+  width: 100%;
+}
+
+#textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+}
+
+.submit {
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  background-color: var(--green);
+  font-size: 30px;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submit:hover {
+  transform: scale(1.1);
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: -2rem;
+}
+
+.embeded-map {
+  border-radius: 20px;
+  border: 10px solid var(--green);
+}
+
+.number-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-heading {
+  font-size: 40px;
+  font-style: italic;
+  color: var(--green);
+}
+
+.number, .email {
+  font-size: 40px;
+  color: var(--white);
+}
+
+.line-long {
+  height: 1px;
+  border: none;
+  background-color: var(--green);
+  width: 80%;
+}
+
+@media (width < 950px) {
+  .embeded-map {
+    width: 600px;
+  }
+}
+
+@media (width < 610px) {
+  .section {
+    padding: 3rem 10px;
+  }
+
+  .embeded-map {
+    width: 400px;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media (width < 500px) {
+  .embeded-map {
+    width: 300px;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .form {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 1rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  label {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  fieldset {
+    gap: 2rem;
+  }
+
+  #area {
+    width: 100%;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .submit {
+    font-size: 25px;
+  }
+
+  .number, .email {
+    font-size: 30px;
+  }
+}

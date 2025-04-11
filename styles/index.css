@@ -1,0 +1,273 @@
+/* section one */
+
+.section-one {
+  width: 100%;
+  height: calc(100vh - 130px);
+  background-image: url(../images/hero.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.section-one::after, .section-three::after {
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--black);
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+}
+
+.hero-heading, .hero-text, .hero-button, .cta-button {
+  color: var(--white);
+  z-index: 10;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 75px;
+  font-style: italic;
+}
+
+.hero-text {
+  font-size: 25px;
+}
+
+.hero-button, .cta-button {
+  border: none;
+  border-radius: 15px;
+  font-size: 30px;
+  background-color: var(--green);
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 15px;
+}
+
+.started-link {
+  z-index: 10;
+}
+
+.hero-button:hover {
+  transform: scale(1.1);
+}
+
+@media (width < 400px) {
+  .hero-heading {
+    font-size: 50px;
+  }
+
+  .hero-text {
+    font-size: 25px;
+  }
+
+  .hero-button {
+    font-size: 25px;
+  }
+
+  .cta-heading {
+    font-size: 50px;
+  }
+}
+
+/* section one end */
+
+/* section two */
+
+.section-two {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+  background-color: var(--black);
+  gap: 4rem;
+  overflow: hidden;
+}
+
+.highlights {
+  font-size: 50px;
+  color: var(--white);
+  font-style: italic;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.service {
+  box-shadow: 1px 1px 4px;
+  background-color: var(--white);
+  padding: 4rem;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 430px;
+}
+
+.siluet {
+  width: 300px;
+}
+
+.desc-heading {
+  font-size: 35px;
+  color: var(--green);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.done {
+  height: 20px;
+}
+
+.desc-text {
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.desc-text span {
+  margin-top: -2px;
+}
+
+@media (width < 1450px) {
+  .services-container {
+    flex-direction: column;
+  }
+
+  .service {
+    width: fit-content;
+    flex-direction: row;
+    width: 800px;
+  }
+}
+
+@media (width < 820px) {
+  .service {
+    flex-direction: column;
+    width: 430px;
+  }
+}
+
+@media (width < 450px) {
+  .service {
+    padding: 2rem;
+    width: 315px;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+  }
+
+  .siluet {
+    width: 250px;
+  }
+
+  .desc-text {
+    font-size: 18px;
+    height: 60px;
+  }
+
+  .highlights {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+/* section two end */
+
+/* section three */ 
+
+.section-three {
+  width: 100%;
+  position: relative;
+  height: calc(100vh - 130px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/CTA.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-three::after {
+  opacity: 0.5;
+}
+
+.cta-heading {
+  font-size: 75px;
+  font-style: italic;
+  color: var(--white);
+  z-index: 10;
+  text-align: center;
+}
+
+.cta {
+  height: 150px;
+  z-index: 10;
+}
+
+.cta-text {
+  color: var(--white);
+  font-size: 30px;
+  z-index: 10;
+  text-align: center;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+.cta-link {
+  z-index: 10;
+}
+
+@media (width < 600px) {
+  .section-three {
+    padding: 0 1rem;
+  }
+
+  .cta-heading {
+    font-size: 60px;
+  }
+
+  .cta-text {
+    font-size: 25px;
+  }
+
+  .cta-button {
+    font-size: 25px;
+  }
+}
+
+/* section three end */ 

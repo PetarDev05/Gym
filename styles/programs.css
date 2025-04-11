@@ -1,0 +1,168 @@
+.section {
+  width: 100%;
+  background-color: var(--black);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.programs-heading {
+  font-size: 5.5em;
+  color: var(--green);
+  font-style: italic;
+  text-align: center;
+}
+
+.intro {
+  font-size: 30px;
+  color: var(--white);
+  text-align: center;
+}
+
+.programs-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid var(--green);
+  padding: 1rem;
+}
+
+.program-name {
+  font-size: 30px;
+  color: var(--green);
+  font-style: italic;
+  text-align: center;
+}
+
+.program-image {
+  width: 200px;
+  border-radius: 50px;
+}
+
+.description, .value {
+  font-size: 20px;
+  color: var(--white);
+}
+
+.value-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 15px;
+}
+
+.value-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.done {
+  height: 20px;
+}
+
+.price {
+  font-size: 30px;
+  color: var(--green);
+}
+
+.program-button {
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.program-button:hover {
+  transform: scale(1.1);
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.cta-text {
+  font-size: 40px;
+  font-style: italic;
+  color: var(--green);
+  text-align: center;
+  margin: 0 10px;
+}
+
+.cta-button {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--green);
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--white);
+  transition: 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+@media (width < 1350px) {
+  .programs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 850px) {
+  .programs-container {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width < 500px) {
+  .programs-container {
+    padding: 0;
+    width: 100%;
+  }
+
+  .program {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+  .programs-heading {
+    font-size: 50px;
+  }
+
+  .intro {
+    font-size: 20px;
+    padding: 10px;
+  }
+}

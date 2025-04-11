@@ -1,0 +1,43 @@
+* {
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --gray: rgb(60, 60, 60);
+  --light-gray: rgb(200, 200, 200);
+  --green: rgb(59, 211, 110);
+  --dark-blue: rgb(63, 72, 204);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+p, a {
+  font-weight: 400;
+}
+
+body {
+  padding-top: 130px;
+}
+
+.invisible {
+  width: 100px;
+  height: 10px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}

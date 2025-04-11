@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron Gym</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Font end -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+  <div class="invisible" id="head"></div>
+  <!-- header -->
+  <header class="header">
+    <img src="images/gym.png" alt="logo" class="logo">
+
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="index.html" class="list-link">Home</a></li>
+        <li class="nav-list-item"><a href="about.html" class="list-link">About</a></li>
+        <li class="nav-list-item"><a href="programs.html" class="list-link">Programs</a></li>
+        <li class="nav-list-item"><a href="galery.html" class="list-link">Gallery</a></li>
+        <li class="nav-list-item"><a href="contact.html" class="list-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="burger-menu-icon js-burger-menu-icon">
+    <span class="burger-menu-line burger-menu-line-1 js-burger-menu-line"></span>
+    <span class="burger-menu-line burger-menu-line-2 js-burger-menu-line"></span>
+    <span class="burger-menu-line burger-menu-line-3 js-burger-menu-line"></span>
+    <span class="burger-menu-line burger-menu-line-4 js-burger-menu-line"></span>
+    <span class="burger-menu-line burger-menu-line-5 js-burger-menu-line"></span>
+    <span class="burger-menu-line burger-menu-line-6 js-burger-menu-line"></span>
+  </div>
+
+  <nav class="off-navigation js-off-navigation">
+    <img src="images/gym.png" alt="" class="off-logo">
+    <ul class="off-list">
+      <li class="off-item"><a href="index.html" class="off-link">Home</a></li>
+      <li class="off-item"><a href="about.html" class="off-link">About</a></li>
+      <li class="off-item"><a href="programs.html" class="off-link">Programs</a></li>
+      <li class="off-item"><a href="galery.html" class="off-link">Gallery</a></li>
+      <li class="off-item"><a href="contact.html" class="off-link">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- header end -->
+
+  <!-- section -->
+
+  <section class="section">
+
+    <div class="number-email">
+      <h1 class="contact-heading">Contact us</h1>
+      <p class="number">+381 | 63 783 4275</p>
+      <p class="email">irongym@gmail.com</p>
+    </div>
+
+    <hr class="line-long">
+
+    <form action="https://formsubmit.co/pejovicpetar02@gmail.com" class="form" method="POST">
+      <h1 class="form-heading">Fill the form to schedule your first training</h1>
+
+      <fieldset class="field-one">
+        <label class="name-label" for="">
+          <p class="name">name:</p><input name="ime" type="text" placeholder="Marko">
+        </label>
+
+        <label class="name-label" for="">
+          <p class="name">Last name:</p><input name="prezime" type="text" placeholder="Marković">
+        </label>
+      </fieldset>
+
+      <hr class="line">
+
+      <fieldset class="field-two">
+        <label for="" class="contact">
+          <p class="name">e-mail:</p><input name="e-mail" type="email" placeholder="@">
+        </label>
+
+        <label for="" class="contact">
+          <p class="name">Phone number:</p><input name="broj-telefona" type="number" placeholder="+381 |">
+        </label>
+      </fieldset>
+
+      <hr class="line">
+
+      <fieldset>
+        <label for="" class="info">
+          <p class="name">program:</p>
+          <select name="programs" id="">
+            <option name="program" value="program-0">chose program</option>
+            <option name="program" value="program-1">gym membership</option>
+            <option name="program" value="program-2">group trainings</option>
+            <option name="program" value="program-3">personal trainings</option>
+            <option name="program" value="program-4">specialized trainings</option>
+          </select>
+        </label>
+
+        <label for="" class="info" id="textarea">
+          <p class="name">Do you have any questions?</p><textarea name="pitanje" placeholder="Ask anything" name="" id="area"></textarea>
+        </label>
+      </fieldset>
+
+      <hr class="line">
+      <input type="hidden" name="_next" value="thanks.html">
+      <button class="submit" type="submit">Submit</button>
+    </form>
+
+    <hr class="line-long">
+
+    <div class="map">
+      <h1 class="map-heading">How to find us</h1>
+      <iframe class="embeded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.957887185718!2d20.395416176602097!3d44.80204687737396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6f9962730683%3A0x6502355495040cf9!2z0IjRg9GA0LjRmNCwINCT0LDQs9Cw0YDQuNC90LAgNTEsINCR0LXQvtCz0YDQsNC0!5e0!3m2!1ssr!2srs!4v1744278376305!5m2!1ssr!2srs" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- section end -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-holder">
+      <img src="images/green-logo.png" alt="" class="footer-logo">
+      <div class="address">
+        <p class="address-text">Iron gym</p>
+        <p class="address-text">Jurija Gagarina 51</p>
+        <p class="address-text">Belgrade 11070, Serbia</p>
+      </div>
+
+      <div class="social-media">
+        <span>
+          <a href="#" class="soc-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="soc-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="soc-link"><i class="fa-brands fa-x"></i></a>
+        </span>
+        <span>
+          <a href="#" class="soc-link"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="soc-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="soc-link"><i class="fa-brands fa-youtube"></i></a>
+        </span>
+      </div>
+    </div>
+
+    <a href="#head" class="arrow-link">
+      <div class="arrow">
+        <span class="arrow-line al-1"></span>
+        <span class="arrow-line al-2"></span>
+        <span class="arrow-line al-3"></span>
+      </div>
+    </a>
+
+  </footer>
+  <!-- footer end -->
+  <script type="module" src="main-script/contact.js"></script>
+</body>
+
+</html>
